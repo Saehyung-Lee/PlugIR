@@ -15,13 +15,15 @@ Our code is based on
 ### datasets
 * [COCO 2017 Unlabeled images](http://images.cocodataset.org/zips/unlabeled2017.zip)
 * [VisDial](https://visualdialog.org/data)
-    ├── train                   
-    │    ├──images
-	│    └──visdial_1.0_train.json
+```
+    VisDial  
+    ├── train                    
+    │    ├── images          
+    │    └── visdial_1.0_train.json                
     └── val
-         ├──images
-	     └──visdial_1.0_val.json
-
+         ├── images  
+	 └── visdial_1.0_val.json
+```
 ## Context Reformulation and Context-aware Dialogue Generation
 Our method, PlugIR, actively utilizes the general instruction-following capability of LLMs in two ways. First, by transforming the dialogue-form context into a caption-style query, we eliminate the need to fine-tune a retrieval model on existing visual dialogue data, thereby enabling the use of any arbitrary black-box model. Second, we construct the LLM questioner to generate non-redundant questions about the attributes of the target image, based on the information of retrieval candidate images in the current context. This approach mitigates the issues of noisiness and redundancy in the generated questions.
 ```PlugIR
