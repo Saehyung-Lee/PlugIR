@@ -1,6 +1,6 @@
-# [ACL 2024 main] Interactive Text-to-Image Retrieval with Large Language Models: A Plug-and-Play Approach
+# [ACL 2024 Oral] Interactive Text-to-Image Retrieval with Large Language Models: A Plug-and-Play Approach
 
-This repository is the official implementation of [Interactive Text-to-Image Retrieval with Large Language Models: A Plug-and-Play Approach](https://arxiv.org/abs/2406.03411), published as a main (long) paper at ACL 2024.
+This repository is the official implementation of [Interactive Text-to-Image Retrieval with Large Language Models: A Plug-and-Play Approach](https://arxiv.org/abs/2406.03411), published as a main (oral) paper at ACL 2024.
 Our code is based on
 1. [ChatIR (Levy et al., NeurIPS 2023)](https://github.com/levymsn/ChatIR)
 2. [PyTorch image classification reference](https://github.com/pytorch/vision/tree/main/references/classification)
