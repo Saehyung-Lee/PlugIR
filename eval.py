@@ -237,7 +237,7 @@ class PlugIREval:
         mean_best_rank_over_rounds = []
         std_best_rank_over_rounds = []
         for dl in range(args.num_rounds-1):
-            bri += ((min_ranks[dl] + min_ranks[dl+1]) / 2).mean()
+            bri += ((torch.log(min_ranks[dl]+1.) + torch.log(min_ranks[dl+1]+1.)) / 2).mean()
         bri /= args.num_rounds-1
         logging.info(f"\t BRI: {bri}")
 
